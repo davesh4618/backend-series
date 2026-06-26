@@ -1,10 +1,5 @@
 import mongoose from "mongoose";
+import 'dotenv/config'
+import connectDB from "./database/index.js";
 
-import express from "express"
-const app = express()
-
-app.get("/",(req,res)=>{
-  res.send("helloooooo")
-})
-
-app.listen(3000)
+connectDB()
