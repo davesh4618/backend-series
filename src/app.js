@@ -4,10 +4,7 @@ import cookieParser from 'cookie-parser'
 
 
 const app = express()
-app.use(cors({
-  origin :process.env.CORS_ORIGIN,
-  credentials: true
-}))
+app.use(cors({origin :process.env.CORS_ORIGIN,credentials: true}))
 /*Default roop se, browser kisi bhi frontend ko kisi dusre domain ke backend se data nikalne nahi deta.
 
 Is line se aap Express ko bol rahe ho: "Sirf usi website ko mera data access karne dena jiska URL .env file ke CORS_ORIGIN mein likha hai (jaise http://localhost:5173 aapka React app)." */
